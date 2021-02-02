@@ -30,10 +30,10 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 
 
-	implementation "org.mapstruct:mapstruct:${mapstructVersion}"
-	annotationProcessor "org.mapstruct:mapstruct-processor:${mapstructVersion}"
-	compileOnly "org.projectlombok:lombok:${lombokVersion}"
-	annotationProcessor "org.projectlombok:lombok:${lombokVersion}"
+	compileOnly "org.projectlombok:lombok:${lombokVersion}","org.mapstruct:mapstruct:${mapstructVersion}"
+	annotationProcessor "org.projectlombok:lombok:${lombokVersion}","org.mapstruct:mapstruct-processor:${mapstructVersion}"
+	/*implementation "org.mapstruct:mapstruct:${mapstructVersion}"
+	annotationProcessor "org.mapstruct:mapstruct-processor:${mapstructVersion}"*/
 
 
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'

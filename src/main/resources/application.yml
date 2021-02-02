@@ -1,0 +1,44 @@
+
+########################
+#
+# UNICO PROJECT USERS MICRO SERVICE
+#
+########################
+
+spring:
+  profiles:
+    active: local
+    
+--- #local env
+spring:
+  profiles: local
+  jpa:
+    database: mysql
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://127.0.0.1:3306/user_msa
+    name: hosun
+    password: hosun_01
+    
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+server:
+  port: 8083
+  servlet:
+    context-path: /
+--- #dev env
+spring:
+  profiles: dev
+
+--- #prod env
+spring:
+  profiles: prod
+server:
+  port: 8083
+  
+  

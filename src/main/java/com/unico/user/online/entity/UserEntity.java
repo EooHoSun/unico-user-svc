@@ -1,4 +1,4 @@
-package com.unico.SWC.user.usersvc.online.user.entity;
+package com.unico.user.online.entity;
 
 
 import lombok.*;
@@ -17,7 +17,7 @@ import java.time.LocalDateTime;
  * Setter method를 사용할 수 없음. 따라서 빌더패턴을 이용해야 함.
  *
  */
-@NoArgsConstructor( access = AccessLevel.PROTECTED)
+@NoArgsConstructor( access = AccessLevel.PROTECTED )
 @AllArgsConstructor
 @Entity
 @Builder
@@ -32,7 +32,6 @@ public class UserEntity {
 	boolean useYn;
 	LocalDateTime createdAt;
 	LocalDateTime updatedAt;
-
 
 	public void updateUserPwd(String userPwd){
 		if( userPwd != ""  && this.userPwd != userPwd){
@@ -54,7 +53,6 @@ public class UserEntity {
 			this.updatedAt = LocalDateTime.now();
 		}
 	}
-
 }
 
 

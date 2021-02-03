@@ -1,9 +1,9 @@
-package com.unico.SWC.user.usersvc.online.user.service;
+package com.unico.user.online.service;
 
-import com.unico.SWC.user.usersvc.online.user.dto.UserDTO;
-import com.unico.SWC.user.usersvc.online.user.entity.UserEntity;
-import com.unico.SWC.user.usersvc.online.user.repository.UserMapper;
-import com.unico.SWC.user.usersvc.online.user.repository.UserRepository;
+import com.unico.user.online.dto.UserDTO;
+import com.unico.user.online.entity.UserEntity;
+import com.unico.user.online.repository.UserMapper;
+import com.unico.user.online.repository.UserRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -35,6 +35,8 @@ public class UserService {
 					.createdAt(LocalDateTime.now())
 					.updatedAt(null)
 					.build();
+
+
 
 			return mapper.toDTO( repository.save( entity ) );
 		}

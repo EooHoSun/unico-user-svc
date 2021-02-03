@@ -1,4 +1,4 @@
-package com.unico.SWC.user.usersvc.online.user.dto;
+package com.unico.user.online.dto;
 
 import lombok.Data;
 

@@ -1,7 +1,7 @@
-package com.unico.SWC.user.usersvc.online.user.controller;
+package com.unico.user.online.controller;
 
-import com.unico.SWC.user.usersvc.online.user.dto.UserDTO;
-import com.unico.SWC.user.usersvc.online.user.service.UserService;
+import com.unico.user.online.service.UserService;
+import com.unico.user.online.dto.UserDTO;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 

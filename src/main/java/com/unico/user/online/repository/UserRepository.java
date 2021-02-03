@@ -1,6 +1,6 @@
-package com.unico.SWC.user.usersvc.online.user.repository;
+package com.unico.user.online.repository;
 
-import com.unico.SWC.user.usersvc.online.user.entity.UserEntity;
+import com.unico.user.online.entity.UserEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
